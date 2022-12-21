@@ -5,6 +5,10 @@
     width: 100%;
     height: 100%;
     flex-direction: column;
+    background-image: url("../images/background-2.jpeg");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
 
     h2 {
         width: 95%;
@@ -20,7 +24,7 @@
     p {
         width: 95%;
         text-align: center;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-size: 1rem;
         margin-bottom: 2rem;
     }
@@ -31,6 +35,7 @@
         align-items: center;
         flex-direction: column;
         list-style: none;
+        color: #fff;
         li{
             img{
                 margin-right: 1rem;
