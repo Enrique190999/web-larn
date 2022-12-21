@@ -1,0 +1,13 @@
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #fff;
+$nav-font-color: #0c0c0c;
+$link-hover-color: #c200f8;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import "reboot";
+@import "navbar";
+@import "main";
+@import "conference";
+@import "program";
