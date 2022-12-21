@@ -10,14 +10,9 @@
 }
 
 .navbar_img_a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .navbar_img_a #img_logo_navbar {
   width: 30px;
   margin-right: 10px;
@@ -41,7 +36,6 @@
   text-transform: uppercase;
   font-size: 1.4em;
 }
-
 .brand a,
 .brand a:visited {
   color: #0c0c0c;
@@ -51,18 +45,15 @@
 nav {
   float: right;
 }
-
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 nav ul li {
   float: left;
   position: relative;
 }
-
 nav ul li a {
   display: block;
   padding: 10px 20px 0 20px;
@@ -71,9 +62,7 @@ nav ul li a {
   color: #0c0c0c;
   text-decoration: none;
 }
-
 nav ul li a::before {
-  -webkit-transition: 300ms;
   transition: 300ms;
   height: 5px;
   content: "";
@@ -82,20 +71,16 @@ nav ul li a::before {
   width: 0%;
   bottom: 0px;
 }
-
 nav ul li a:hover::before {
   width: 70%;
 }
-
 nav ul li a:not(:only-child):after {
   padding-left: 4px;
-  content: ' ▾';
+  content: " ▾";
 }
-
 nav ul li ul li {
   min-width: 190px;
 }
-
 nav ul li ul li a {
   padding: 15px;
   line-height: 20px;
@@ -105,8 +90,7 @@ nav ul li ul li a {
   display: none;
   position: absolute;
   z-index: 1;
-  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .nav-mobile {
@@ -147,7 +131,6 @@ nav ul li ul li a {
     position: static;
   }
 }
-
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -155,7 +138,6 @@ nav ul li ul li a {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 }
-
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
@@ -166,35 +148,26 @@ nav ul li ul li a {
   background: #c200f8;
   position: absolute;
   display: block;
-  content: '';
-  -webkit-transition: all 300ms ease-in-out;
+  content: "";
   transition: all 300ms ease-in-out;
 }
-
 #nav-toggle span:before {
   top: -10px;
 }
-
 #nav-toggle span:after {
   bottom: -10px;
 }
-
 #nav-toggle.active span {
   background-color: transparent;
 }
-
 #nav-toggle.active span:before, #nav-toggle.active span:after {
   top: 0;
 }
-
 #nav-toggle.active span:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 #nav-toggle.active span:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 799px) {
@@ -202,9 +175,8 @@ nav ul li ul li a {
     display: block !important;
   }
 }
-
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .conference-section {
@@ -215,44 +187,27 @@ body {
   height: 100%;
   background-image: url("../images/background-parent-conference.png");
 }
-
 .conference-section .parent-conference {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 300px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 .conference-section .parent-conference .parent-carrousel {
   height: 600px;
   margin: 0;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 500px 100px;
-      grid-template-rows: 500px 100px;
-  -ms-grid-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-      grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
   justify-items: center;
 }
-
 .conference-section .parent-conference h2 {
   padding: 1rem;
   width: 90%;
@@ -260,7 +215,6 @@ body {
   color: #fff;
   font-size: 3rem;
 }
-
 .conference-section .parent-conference h3 {
   width: 90%;
   text-align: center;
@@ -268,7 +222,6 @@ body {
   font-size: 2rem;
   margin: 0 0 1rem 0;
 }
-
 .conference-section .parent-conference p {
   width: 90%;
   text-align: center;
@@ -276,36 +229,22 @@ body {
   font-size: 1rem;
   margin: 0 0 1rem 0;
 }
-
 .conference-section .parent-conference main#carousel {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1 / 8;
+  grid-row: 1/2;
+  grid-column: 1/8;
   width: 100vw;
   height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-perspective: 600px;
-          perspective: 600px;
+  transform-style: preserve-3d;
+  perspective: 600px;
   --items: 5;
   --middle: 3;
   --position: 1;
   pointer-events: none;
 }
-
 .conference-section .parent-conference div.item {
   position: absolute;
   width: 300px;
@@ -313,99 +252,62 @@ body {
   background-color: coral;
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
-  -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
-  -webkit-transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
-          transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
-  z-index: calc((var(--position) - var(--abs)));
+  transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+  z-index: calc(var(--position) - var(--abs));
 }
-
 .conference-section .parent-conference div.item:nth-of-type(1) {
   --offset: 1;
   background-image: url("../images/carrousel-1.jpeg");
 }
-
 .conference-section .parent-conference div.item:nth-of-type(2) {
   --offset: 2;
   background-image: url("../images/carrousel-2.jpeg");
 }
-
 .conference-section .parent-conference div.item:nth-of-type(3) {
   --offset: 3;
   background-image: url("../images/carrousel-3.jpeg");
 }
-
 .conference-section .parent-conference div.item:nth-of-type(4) {
   --offset: 4;
   background-image: url("../images/carrousel-4.jpeg");
 }
-
 .conference-section .parent-conference div.item:nth-of-type(5) {
   --offset: 5;
   background-image: url("../images/carrousel-5.jpeg");
 }
-
 .conference-section .parent-conference input:nth-of-type(1) {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
-
 .conference-section .parent-conference input:nth-of-type(1):checked ~ main#carousel {
   --position: 1;
 }
-
 .conference-section .parent-conference input:nth-of-type(2) {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
-
 .conference-section .parent-conference input:nth-of-type(2):checked ~ main#carousel {
   --position: 2;
 }
-
 .conference-section .parent-conference input:nth-of-type(3) {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4 /5;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-column: 4/5;
+  grid-row: 2/3;
 }
-
 .conference-section .parent-conference input:nth-of-type(3):checked ~ main#carousel {
   --position: 3;
 }
-
 .conference-section .parent-conference input:nth-of-type(4) {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  grid-column: 5 / 6;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-column: 5/6;
+  grid-row: 2/3;
 }
-
 .conference-section .parent-conference input:nth-of-type(4):checked ~ main#carousel {
   --position: 4;
 }
-
 .conference-section .parent-conference input:nth-of-type(5) {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 1;
-  grid-column: 6 / 7;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-column: 6/7;
+  grid-row: 2/3;
 }
-
 .conference-section .parent-conference input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
 }
@@ -420,4 +322,25 @@ body {
       display: block !important;
     }
   } */
-/*# sourceMappingURL=index.css.map */
+.program-section {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.program-section h2 {
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+}
+.program-section p {
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,24 @@
+.program-section{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        width: 90%;
+        text-align: center;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    p {
+        width: 90%;
+        text-align: center;
+        color: #fff;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+}
