@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./style/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Document</title>
+
+    <script src="./scripts/membership.js"></script>
+
+    <script src="./scripts/tabs.js"></script>
 </head>
 
 <body>
@@ -102,7 +106,76 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut voluptatem iure quas, repellat mollitia eveniet
             amet quis reprehenderit cupiditate. Natus asperiores iusto officia reiciendis repellat quasi neque corrupti
             voluptate magni?</p>
+        <div class="parent-carrousel">
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <main id="carousel">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <main>
+        </div>
     </section>
+    <section class="membership-section">
+
+        <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'registro')">Registro</button>
+            <button class="tablinks" onclick="openCity(event, 'login')">Iniciar sesión</button>
+        </div>
+        <div id="registro" style="display:block;" class="tabcontent">
+            <h2>Registro</h2>
+            <form onsubmit="onHandleSubmitFormSignup(event)" id="form-membership-singup">
+                <div class="group-input">
+                    <label for="name_input_signup">Nombre *</label>
+                    <input type="text" id="name_input_signup" placeholder="Lucia">
+                </div>
+                <div class="group-input">
+                    <label for="surname_input_signup">Apellidos *</label>
+                    <input type="text" id="surname_input_signup" placeholder="Arnaiz Lopez">
+                </div>
+                <div class="group-input">
+                    <label for="date_select_signup">Fechas disponibles *</label>
+                    <select id="date_select_signup">
+                        <option value="19-09-2018">19-09-2018</option>
+                        <option value="18-09-2018">18-09-2018</option>
+                        <option value="17-09-2018">17-09-2018</option>
+                        <option value="16-09-2018">16-09-2018</option>
+                    </select>
+                </div>
+                <div class="group-input">
+                    <label for="email_input_signup">Correo Electrónico *</label>
+                    <input type="email" id="email_input_signup" placeholder="luciaarnaiz123@gmail.com">
+                </div>
+                <div class="group-input">
+                    <label for="password_input_signup">Password *</label>
+                    <input type="password" id="password_input_signup" placeholder="luciaarnaiz1235" />
+                </div>
+                <input type="submit" value="Registrarse" />
+            </form>
+        </div>
+        <div id="login" class="tabcontent">
+            <h2>Iniciar sesión</h2>
+            <form onsubmit="onHandleSubmitFormLogin(event)" id="form-membership-login">
+                <div class="group-input">
+                    <label for="email_input">Correo Electrónico *</label>
+                    <input type="email" id="email_input_login" placeholder="luciaarnaiz123@gmail.com">
+                </div>
+                <div class="group-input">
+                    <label for="password_input">Password *</label>
+                    <input type="password" id="password_input_login" placeholder="luciaarnaiz1235" />
+                </div>
+                <input type="submit" value="Iniciar Sesión" />
+            </form>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
     <script src="./scripts/navbar.js" />
 </body>
 

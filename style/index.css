@@ -426,4 +426,164 @@ body {
   color: #fff;
   font-size: 1rem;
   margin-bottom: 2rem;
+}
+.registration-section .parent-carrousel {
+  height: 600px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.registration-section main#carousel {
+  grid-row: 1/2;
+  grid-column: 1/8;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+.registration-section div.item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+  z-index: calc(var(--position) - var(--abs));
+}
+.registration-section div.item:nth-of-type(1) {
+  --offset: 1;
+  background-image: url("../images/carrousel-1.jpeg");
+}
+.registration-section div.item:nth-of-type(2) {
+  --offset: 2;
+  background-image: url("../images/carrousel-2.jpeg");
+}
+.registration-section div.item:nth-of-type(3) {
+  --offset: 3;
+  background-image: url("../images/carrousel-3.jpeg");
+}
+.registration-section div.item:nth-of-type(4) {
+  --offset: 4;
+  background-image: url("../images/carrousel-4.jpeg");
+}
+.registration-section div.item:nth-of-type(5) {
+  --offset: 5;
+  background-image: url("../images/carrousel-5.jpeg");
+}
+.registration-section input:nth-of-type(1) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.registration-section input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+.registration-section input:nth-of-type(2) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.registration-section input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+.registration-section input:nth-of-type(3) {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.registration-section input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+.registration-section input:nth-of-type(4) {
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+.registration-section input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+.registration-section input:nth-of-type(5) {
+  grid-column: 6/7;
+  grid-row: 2/3;
+}
+.registration-section input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
+}
+
+.membership-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Style the buttons inside the tab */
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+  /* Style the tab content */
+}
+.membership-section h2 {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.membership-section form {
+  margin: 3rem 0 1rem 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.membership-section .group-input {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.membership-section input[type=submit] {
+  margin-top: 1rem;
+  padding: 0.5rem 0 0.5rem 0;
+  width: 90%;
+  border-radius: 10px 0 10px 0;
+  font-weight: 700;
+}
+.membership-section .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.membership-section .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.membership-section .tab button:hover {
+  background-color: #ddd;
+}
+.membership-section .tab button.active {
+  background-color: #ccc;
+}
+.membership-section .tabcontent {
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }/*# sourceMappingURL=index.css.map */
